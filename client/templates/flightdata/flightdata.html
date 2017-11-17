@@ -1,0 +1,38 @@
+<template name="AddFlightData">
+  <div class="well">
+    {{> quickForm
+    collection="FlightData"
+    template="bootstrap3-horizontal"
+    label-class="col-sm-2"
+    input-col-class="col-sm-10"
+
+    id="AddFlightDataForm"
+    type="method"
+    meteormethod="addFlightData"
+    resetOnSuccess=true}}
+  </div>
+    <pre> {{result}} </pre>
+
+
+
+</template>
+
+<template name="UpdateFlightData">
+  <div class="well">
+    {{> quickForm
+    collection="FlightData"
+    template="bootstrap3-horizontal"
+    label-class="col-sm-2"
+    input-col-class="col-sm-10"
+
+    id="UpdateFlightDataForm"
+    type="method-update"
+    meteormethod="updateFlightData"
+    doc=this
+    buttonContent="Update"}}
+  </div>
+</template>
+
+<template name="ShowData">
+    {{flightData}}
+</template>
