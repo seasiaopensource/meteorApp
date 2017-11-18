@@ -1,5 +1,5 @@
 /**
- * A list of sample students to pre-fill the Collection.
+ * A list of sample Flight to pre-fill the Collection.
  * @type {*[]}
  */
 
@@ -8,7 +8,7 @@ var flightData = [
 ];
 
 /**
- * Initialize the StudentData collection if empty.
+ * Initialize the FlightData collection if empty.
  */
 if (FlightData.find().count() === 0) {
   _.each(flightData,  function(flight) {
